@@ -1,0 +1,21 @@
+﻿@*'Blog.Models.Post' infered since Blog.Models is in _ViewImports*@
+@model Post
+
+@{
+
+}
+
+<div>
+    @*asp-action="Edit" specifies where forms goes, same as link <a>*@
+    <form asp-controller="Home" asp-action="Edit" method="post">
+        <div>
+            <label>Title</label>
+            <input asp-for="Title" />
+        </div>
+        <div>
+            <label>Body</label>
+            <input asp-for="Body" />
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
